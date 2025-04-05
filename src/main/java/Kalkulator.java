@@ -15,10 +15,9 @@ public class Kalkulator  {
         while(!czyWyjscie){
             try{
                 System.out.print("Podaj pierwszą liczbę: ");
-                int a = scanner.nextInt();
+                int a = Integer.parseInt(scanner.nextLine());
                 System.out.print("Podaj drugą liczbę: ");
-                int b = scanner.nextInt();
-                scanner.nextLine();
+                int b = Integer.parseInt(scanner.nextLine());
                 System.out.println("Jaka operację chcesz wykonać? (+, -, *, /): ");
                 String operacja = scanner.nextLine();
                 String dzialanie = String.format("%d %s %d = ", a, operacja, b);
@@ -66,8 +65,7 @@ public class Kalkulator  {
                 System.out.println("Wybierz '0' jeżeli chcesz wykonać kolejne działanie...");
                 System.out.println("Wybierz '1' jeżeli chcesz sprawdzić ostatnie działania'");
                 System.out.println("Wybierz '2' jeżeli chcesz wyjść z programu");
-                wybor = scanner.nextInt();
-                scanner.nextLine();
+                wybor = Integer.parseInt(scanner.nextLine());
                 switch (wybor) {
                     case 0:
                         czyWybranaCyfra = true;
