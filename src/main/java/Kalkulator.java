@@ -67,7 +67,6 @@ public class Kalkulator  {
                 System.out.println("Wybierz '1' jeżeli chcesz sprawdzić ostatnie działania'");
                 System.out.println("Wybierz '2' jeżeli chcesz wyjść z programu");
                 wybor = scanner.nextInt();
-                scanner.nextLine();
                 switch (wybor) {
                     case 0:
                         czyWybranaCyfra = true;
