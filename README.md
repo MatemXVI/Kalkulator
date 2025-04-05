@@ -11,5 +11,5 @@ Napisz program w Javie, który:
 - Wyświetla wynik.
 Ponadto program wyświetla liczbę w pętli z której można wyjść. To program wykonuje w chwili wrzucenia go do Githuba.
 Planuje się dodanie:
-- historii wykonywanych wyników (za pomoca Listy)
+- historii wykonywanych wyników (za pomoca Listy) - zrobione(ostatni commit: poprawa zmiennej)
 - spróbowanie zrobienia go w formie graficznej
