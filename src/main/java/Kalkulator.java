@@ -5,11 +5,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Kalkulator  {
-    public static void wykonajDzialanie(String dzialanie, int wynik, ArrayList wyniki){
-        String wykonaneDzialanie = dzialanie + wynik;
-        wyniki.add(wykonaneDzialanie);
-        System.out.println(wykonaneDzialanie);
-    }
+//    public static void wykonajDzialanie(String dzialanie, int wynik, ArrayList wyniki){
+//        String wykonaneDzialanie = dzialanie + wynik;
+//        wyniki.add(wykonaneDzialanie);
+//        System.out.println(wykonaneDzialanie);
+//    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> wyniki = new ArrayList<>();
@@ -80,16 +80,15 @@ public class Kalkulator  {
                         System.out.println("Wciśnij '9' jeśli chcesz zapisać plik lub inny klawisz aby wrócić do menu ");
                         int zapisDoPliku = Integer.parseInt(scanner.nextLine());
                         if(zapisDoPliku == 9){
-                            FileWriter fw = null;
                             try {
-                                fw = new FileWriter("plik.txt");
+                                FileWriter fw = new FileWriter("plik.txt");
                                 for (String wynik : wyniki) {
                                     fw.append(wynik);
                                 }
                                 fw.close();
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
-                            };
+                            }
                         }
                         break;
                     case 0:
