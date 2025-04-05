@@ -60,7 +60,7 @@ public class Kalkulator  {
             }catch(InputMismatchException e){
                 System.out.println("Podałeś niepoprawną liczbę!");
             }
-            int wybor = -1;
+            int wybor;
             boolean czyWybranaCyfra = false;
             while(!czyWybranaCyfra){
                 System.out.println("Wybierz '0' jeżeli chcesz wykonać kolejne działanie...");
