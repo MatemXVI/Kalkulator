@@ -83,7 +83,7 @@ public class Kalkulator  {
                             try {
                                 FileWriter fw = new FileWriter("plik.txt");
                                 for (String wynik : wyniki) {
-                                    fw.append(wynik);
+                                    fw.write(wynik + "\n");
                                 }
                                 fw.close();
                             } catch (IOException e) {
