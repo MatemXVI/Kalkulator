@@ -16,6 +16,9 @@ public class Kalkulator  {
         boolean czyWyjscie = false;
         while(!czyWyjscie){
             try{
+                int wynik;
+                double wynikDzielenia;
+                String wykonaneDzialanie;
                 System.out.print("Podaj pierwszą liczbę: ");
                 int a = Integer.parseInt(scanner.nextLine());
                 System.out.print("Podaj drugą liczbę: ");
@@ -23,9 +26,6 @@ public class Kalkulator  {
                 System.out.println("Jaka operację chcesz wykonać? (+, -, *, /): ");
                 String operacja = scanner.nextLine();
                 String dzialanie = String.format("%d %s %d = ", a, operacja, b);
-                int wynik;
-                double wynikDzielenia;
-                String wykonaneDzialanie;
                 switch(operacja) {
                     case "+":
                         wynik = a + b;
@@ -80,14 +80,18 @@ public class Kalkulator  {
                         System.out.println("Wciśnij '9' jeśli chcesz zapisać plik lub inny klawisz aby wrócić do menu ");
                         int zapisDoPliku = Integer.parseInt(scanner.nextLine());
                         if(zapisDoPliku == 9){
+                            System.out.print("Podaj nazwę pliku (bez .txt): ");
+                            String nazwaPliku = scanner.nextLine();
+                            String fileName = nazwaPliku + ".txt";
                             try {
-                                FileWriter fw = new FileWriter("plik.txt");
+                                FileWriter fw = new FileWriter(fileName);
                                 for (String wynik : wyniki) {
                                     fw.write(wynik + "\n");
                                 }
                                 fw.close();
+                                System.out.println("Wyniki zapisano do pliku " + fileName);
                             } catch (IOException e) {
-                                throw new RuntimeException(e);
+                                System.out.println("Wystąpił błąd przy zapisie do pliku: " + e.getMessage());
                             }
                         }
                         break;
