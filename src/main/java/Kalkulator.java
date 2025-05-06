@@ -1,7 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Kalkulator  {
@@ -58,7 +57,7 @@ public class Kalkulator  {
                     default:
                         System.out.println("Nieznany znak");
                 }
-            }catch(InputMismatchException e){
+            }catch(NumberFormatException e){
                 System.out.println("Podałeś niepoprawną liczbę!");
             }
             int wybor;
@@ -97,6 +96,7 @@ public class Kalkulator  {
                         break;
                     case 0:
                         czyWyjscie = true;
+                        czyWybranaCyfra = true;
                         break;
                     default:
                         System.out.println("Wybrałeś niepoprawną cyfrę!");
