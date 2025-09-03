@@ -1,15 +1,7 @@
-Zadanie: Kalkulator liczb całkowitych
+Kalkulator liczb całkowitych
 
-Napisz program w Javie, który:
-
-- Pyta użytkownika o dwie liczby całkowite.
-
-- Pyta użytkownika, jaką operację chce wykonać: dodawanie, odejmowanie, mnożenie lub dzielenie.
-
-- Wykonuje wybraną operację.
-
-- Wyświetla wynik.
-Ponadto program wyświetla liczbę w pętli z której można wyjść. To program wykonuje w chwili wrzucenia go do Githuba.
+Program pyta użytkownika o dwie liczby całkowite, jaką operację chce wykonać: dodawanie, odejmowanie, mnożenie lub dzielenie, wykonuje wybraną operację i Wyświetla wynik.
+Ponadto program wyświetla liczbę w pętli z której można wyjść. 
 Planuje się dodanie:
 - historii wykonywanych wyników (za pomoca Listy) - zrobione, obecnie trwają prace nad zapisywaniem w formie pliku - zrobione.
 - spróbowanie zrobienia go w formie graficznej
