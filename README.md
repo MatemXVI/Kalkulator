@@ -5,4 +5,4 @@ Ponadto program wyświetla liczbę w pętli z której można wyjść.
 Planuje się dodanie:
 - historii wykonywanych wyników (za pomoca Listy) - zrobione, obecnie trwają prace nad zapisywaniem w formie pliku - zrobione.
 - spróbowanie zrobienia go w formie graficznej
-Na repozytorum znajduje się również plik wykonywalny aplikacji oraz paczka .jar
+Na repozytorium znajduje się również plik wykonywalny aplikacji oraz paczka .jar
